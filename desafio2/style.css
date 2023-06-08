@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Actor&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1E1E1E;
+    color: white;
+    text-align: center;
+    height: 197px;
+    font-family: 'Lily Script One';
+}
+
+header li {
+    display: inline-block;
+    font-size: 32px;
+    padding: 78px 128px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.boxFilmes {
+    padding: 50px 0px;
+}
+
+.boxFilmes figure {
+    display: inline-block;
+    padding: 0px 45px;
+}
+
+.boxFilmes img {
+    width: 353px;
+    height: 513px;
+}
+
+footer {
+    background-color: #1E1E1E;
+    color: white;
+    width: 100%;
+    height: 197px;
+    font-family: 'Actor', sans-serif;
+}
+
+footer li {
+    display: inline-block;
+    padding: 60px 10px;
+    font-size: 20px;
+}
+
+footer img {
+    width: 78px;
+}
