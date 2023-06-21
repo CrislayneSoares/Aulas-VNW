@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: white;
+    background-image: url("./assets/the_witcher_hell.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 30vw;
+}
+
+header section h2 {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    list-style: none;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    font-weight: 400;
+}
+
+main { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 5vh;
+    background-image: url("./assets/the_witcher_kavil2.png");
+    background-size: cover;
+    width: 38vw;
+    height: 95vh;
+}
+
+main section {
+    margin-top: 22vh;
+}
+
+main section figure {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20vw;
+    
+}
+
+main section figure img {
+    margin-top: 20px;
+}
+
+.the_witcher {
+    width: 44vh;
+}
+
+.btn {
+    width: 34vh;
+}
