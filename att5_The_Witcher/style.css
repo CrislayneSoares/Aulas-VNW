@@ -13,8 +13,6 @@ body {
     background-image: url("./assets/the_witcher_hell.png");
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
 }
 
 header {
@@ -31,9 +29,13 @@ header section {
     width: 30vw;
 }
 
+header img {
+    width: 40px;
+}
+
 header section h2 {
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 nav ul {
@@ -52,16 +54,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 5vh;
-    background-image: url("./assets/the_witcher_kavil2.png");
-    background-size: cover;
-    width: 38vw;
-    height: 95vh;
+    
 }
 
 main section {
-    margin-top: 22vh;
+    background-image: url("./assets/the_witcher_kavil2.png");
+    background-size: cover;
+    width: 32vw;
+    height: 93.7vh;
+    margin-top: -33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 main section figure {
@@ -78,6 +82,7 @@ main section figure img {
 
 .the_witcher {
     width: 44vh;
+    margin-top: 150px;
 }
 
 .btn {
