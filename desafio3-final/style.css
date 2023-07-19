@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.header-footer {
+    display: none;
+}
+
 html {
     font-size: 62.5%;
     font-family: 'Roboto Serif', serif;
@@ -41,7 +45,8 @@ header ul {
 }
 
 .sociais img {
-    width: 28px;
+    width: 36px;
+    height: 30px;
     vertical-align: middle;
     cursor: pointer;
 }
@@ -206,7 +211,7 @@ footer li {
         justify-content: center;
     }
     div {
-        width: 70%;
+        width: 60%;
         top: 70px;
     }
     .banho-tosa div {
@@ -263,6 +268,26 @@ footer li {
         flex-direction: column;
         height: unset;
         text-align: center;
+    }
+
+    footer ul:nth-child(2) {
+        margin-top: 80px;
+    }
+    .header-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+    .header-footer ul {
+        display: flex;
+    }
+    .header-footer li {
+       padding: 0 5px;
+    }
+    .header-footer figure img {
+        width: 50px;
     }
 }
 
