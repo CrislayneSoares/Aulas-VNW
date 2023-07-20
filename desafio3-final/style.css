@@ -16,6 +16,7 @@ html {
 }
 
 header {
+    position: fixed;
     width: 100%;
     height: 10vh;
     display: flex;
@@ -24,6 +25,7 @@ header {
     background-color: black;
     color: white;
     font-size: 2rem;
+    z-index: 999;
 }
 
 header figure {
@@ -54,28 +56,27 @@ header ul {
 main {
     width: 100%;
 }
-
 section {
     width: 100%;
-    height: 100vh;
     display: flex;
     align-items: center;
+    height: 100vh;
 }
 
-.boas-vindas {
+.boas-vindas { 
     background-image: url(./images/web/Grupo\ 486@2x.png);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    background-position: bottom;
-    font-size: 3.6rem;
-    color: white; 
     flex-direction: column;
 }
 
 .boas-vindas h2 {
+    font-size: clamp(2rem, 1rem + 4vw , 4.8rem);
+    color: white; 
     text-align: center;
-    width: 48%;
-    margin-top: 80px;
+    width: 49%;
+    margin-top: 120px;
 }
 
 .boas-vindas img {
@@ -85,7 +86,7 @@ section {
 
 .banho-tosa {
     background-image: url(./images/web/Interseção\ 16@2x.png);
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: right;
     background-color: #F4F2F3;
@@ -102,10 +103,10 @@ div {
 }
 
 div h2 {
-    font-size: 4.8rem;
+    font-size: clamp(2rem, 1rem + 3vw ,4.8rem) ;
 }
 div p {
-    font-size: 3rem;
+    font-size: clamp(2rem, 1rem + 3vw , 3rem);
 }
 
 div input {
@@ -115,7 +116,7 @@ div input {
     color: #F4F2F3;
     border: none;
     border-radius: 44px;
-    font-size: 2.8rem;
+    font-size: clamp(2rem, 1rem + 3vw , 2.8rem);
     margin-top: 50px;
     cursor: pointer;
 }
@@ -124,7 +125,6 @@ div input {
     background-image: url(./images/web/Grupo\ 480@2x.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: left top;
     justify-content: flex-end;
     color: white;
 }
@@ -170,34 +170,19 @@ footer li {
     cursor: pointer;
 }
 
-@media screen and (max-width: 1000px) {
-
-    div h2 {
-        font-size: 4rem;
-    }
-    div p {
-        font-size: 2.6rem;
-    }
-    
-    div input {
-        width: 208px;
-        height: 70px;
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 981px) {
+@media screen and (min-width:1025px) {
     .banho-tosa {
-        background-size: cover;
+        background-size: contain;    
     }
 }
 
-@media screen and (max-width: 875px) {
+@media screen and (max-width: 800px) {
     section {
         height: 150vh;
     }
     .boas-vindas {
-        background-image: url(./images/mobile/Grupo\ 485@2x.png)
+        background-image: url(./images/mobile/Grupo\ 485@2x.png);
+        background-position: center;
     }
     .banho-tosa {
         background-image: url(./images/mobile/Grupo\ 484-1@2x.png);
@@ -214,45 +199,34 @@ footer li {
         width: 60%;
         top: 70px;
     }
-    .banho-tosa div {
+    .banho-tosa div, .mordomia-saudavel div {
         left: 0;
-    }
-    .mordomia-saudavel div {
         right: 0;
     }
 }
 
 @media screen and (max-width: 540px) {
+    section {
+        height: 130vh;
+    }
     div {
         width: 70%;
         top: 70px;
-        left: 0;
-    }
-    header {
-        position: fixed;
-        z-index: 999;
     }
     .insta, .you {
         display: none;
     }
     .boas-vindas h2 {
         width: 84%;
-        font-size: 3rem;
         margin-top: 180px;
     }
     .banho-tosa {
         background-position: center;
     }
-    div h2 {
-        font-size: 3rem;
-    }
-    div p {
-        font-size: 2rem;
-    }
     div input {
         width: 180px;
         height: 60px;
-        font-size: 1.8rem;
+        font-size: 1.9rem;
     }
     .apoio {
         display: flex;
@@ -292,7 +266,22 @@ footer li {
 }
 
 @media screen and (max-width: 375px) {
+    section {
+        height: 100vh;
+    }
     div {
         width: 90%; 
+    }
+    .boas-vindas {
+        background-size: 134vw;
+    }
+    .banho-tosa {
+        background-size: 120vw;
+    }
+    .mordomia-saudavel {
+        background-size: 120vw;
+    }
+    div input {
+        margin-top: 20px;
     }
 }
