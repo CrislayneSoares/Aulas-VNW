@@ -94,7 +94,7 @@ section {
 }
 
 .banho-tosa div {
-    left: 10%;
+    left: 7%;
 }
 
 div {
@@ -130,7 +130,7 @@ div input {
 }
 
 .mordomia-saudavel div {
-    right: 10%;
+    right: 7%;
 }
 
 .apoio {
@@ -171,12 +171,15 @@ footer li {
 }
 
 @media screen and (min-width:1025px) {
+    .boas-vindas {
+        height: 130vh;
+    }
     .banho-tosa {
         background-size: contain;    
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 875px) {
     section {
         height: 150vh;
     }
